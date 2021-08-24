@@ -1,0 +1,37 @@
+<!--Programma creato da Kekko01 (https://github.com/Kekko01), disponibile su GitHub https://github.com/Kekko01/Numeri-Primi-su-TXT-->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeri primi</title>
+    <script>
+        function delay(ms) {
+                ms += new Date().getTime();
+                while (new Date() < ms) { }
+            }
+        delay(2000);
+        var div = 2;
+        var num = 0;
+
+        while (true) {
+            div = 2;
+            while (num % div != 0 && div < num / 2) {
+                div++;
+            }
+            if (num % div != 0) {
+                var p = document.createElement("p");
+                var nodo = document.createTextNode("Numero trovato: " + num);
+                p.appendChild(nodo);
+            }
+            num++;
+        }
+
+        
+    </script>
+</head>
+<body>
+    <p>Numeri Primi: </p>
+
+</body>
+</html>
