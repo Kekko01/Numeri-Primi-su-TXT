@@ -10,7 +10,7 @@ def main():
             for i in f:
                 num=int(i.strip())
         num+=1
-    while 1==1:
+    while True:
         div=2
         while num%div!=0 and div<num/2:
             div+=1
